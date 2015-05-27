@@ -1,4 +1,4 @@
-d3.csv('dataset.csv', function (rawData) {
+d3.csv('dataset.csv', function (rawData) { //可直接讀取csv檔，轉為json
   var data = { children: rawData }; // Follow the standard for pack layout.
   var pack = d3.layout.pack();
   pack = pack.padding(2)
